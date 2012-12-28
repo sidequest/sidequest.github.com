@@ -5,33 +5,18 @@
     <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            //            $('#form1').submit(function () {
-            //                var jqxhr = $.post('api/contact', $('#form1').serialize())
-            //                    .success(function () {
-            //                        var loc = jqxhr.getResponseHeader('Location');
-            //                        var a = $('<a/>', { href: loc, text: loc });
-            //                        $('#message').html(a);
-
-
-            //                    })
-            //                    .error(function () {
-            //                        $('#message').html("Error posting the update.");
-            //                    });
-            //                return false;
-            //            });
-
             $("#form1").submit(function (event) {
                 // setup some local variables
                 var $form = $(this),
                 // let's select and cache all the fields
-        $inputs = $form.find("input, select, button, textarea"),
+				$inputs = $form.find("input, select, button, textarea"),
                 // serialize the data in the form
-        serializedData = $form.serialize();
+				serializedData = $form.serialize();
 
                 // let's disable the inputs for the duration of the ajax request
                 $inputs.attr("disabled", "disabled");
 
-                // fire off the request to /form.php
+                // fire off the request to http://erloncabral.net/api/contact
                 $.ajax({
                     url: "http://erloncabral.net/api/contact",
                     type: "post",
@@ -44,10 +29,7 @@
                     // callback handler that will be called on error
                     error: function (jqXHR, textStatus, errorThrown) {
                         // log the error to the console
-                        console.log(
-                "The following error occured: " +
-                textStatus, errorThrown
-            );
+                        console.log("The following error occured: " +  textStatus, errorThrown);
                     },
                     // callback handler that will be called on completion
                     // which means, either on success or error
