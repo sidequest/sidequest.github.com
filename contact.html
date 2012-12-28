@@ -3,32 +3,74 @@
 <head>
     <title></title>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js" type="text/javascript"></script>
-    <script>
+    <script type="text/javascript">
         $(document).ready(function () {
-            $('#form1').submit(function () {
-                var jqxhr = $.post('http://erloncabral.net/api/contact',  $('#form1').serialize())
-                    .success(function () {
-                        var loc = jqxhr.getResponseHeader('Location');
-                var a = $('<a/>', { href: loc, text: loc });
-                $('#message').html(a);
+            //            $('#form1').submit(function () {
+            //                var jqxhr = $.post('api/contact', $('#form1').serialize())
+            //                    .success(function () {
+            //                        var loc = jqxhr.getResponseHeader('Location');
+            //                        var a = $('<a/>', { href: loc, text: loc });
+            //                        $('#message').html(a);
 
 
-                    })
-                    .error(function () {
-                        $('#message').html("Error posting the update.");
-                    });
-                return false;
+            //                    })
+            //                    .error(function () {
+            //                        $('#message').html("Error posting the update.");
+            //                    });
+            //                return false;
+            //            });
+
+            $("#form1").submit(function (event) {
+                // setup some local variables
+                var $form = $(this),
+                // let's select and cache all the fields
+        $inputs = $form.find("input, select, button, textarea"),
+                // serialize the data in the form
+        serializedData = $form.serialize();
+
+                // let's disable the inputs for the duration of the ajax request
+                $inputs.attr("disabled", "disabled");
+
+                // fire off the request to /form.php
+                $.ajax({
+                    url: "http://erloncabral.net/api/contact",
+                    type: "post",
+                    data: serializedData,
+                    // callback handler that will be called on success
+                    success: function (response, textStatus, jqXHR) {
+                        // log a message to the console
+                        console.log("Hooray, it worked!");
+                    },
+                    // callback handler that will be called on error
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        // log the error to the console
+                        console.log(
+                "The following error occured: " +
+                textStatus, errorThrown
+            );
+                    },
+                    // callback handler that will be called on completion
+                    // which means, either on success or error
+                    complete: function () {
+                        // enable the inputs
+                        $inputs.removeAttr("disabled");
+                    }
+                });
+
+                // prevent default posting of form
+                event.preventDefault();
             });
         });
 
     </script>
 </head>
 <body>
-    <h2>Contato</h2>
-    <form id="form1" method="post" action="http://erloncabral.net/api/contact" 
-    enctype="application/x-www-form-urlencoded">
+    <h2>
+        Contato</h2>
+    <form id="form1" method="post" action="api/contact" enctype="application/x-www-form-urlencoded">
     <div>
-        <label for="Email">Email</label>
+        <label for="Email">
+            Email</label>
     </div>
     <div>
         <input name="Email" type="text" />
@@ -36,8 +78,8 @@
     <div>
         <input type="submit" value="Submit" />
     </div>
-</form>
-
-    <div id="message"></div>
+    </form>
+    <div id="message">
+    </div>
 </body>
 </html>
