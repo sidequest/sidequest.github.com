@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $('#form1').submit(function () {
+                var jqxhr = $.post('http://erloncabral.net/api/contact',  $('#form1').serialize())
+                    .success(function () {
+                        var loc = jqxhr.getResponseHeader('Location');
+                var a = $('<a/>', { href: loc, text: loc });
+                $('#message').html(a);
+
+
+                    })
+                    .error(function () {
+                        $('#message').html("Error posting the update.");
+                    });
+                return false;
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <h2>Contato</h2>
+    <form id="form1" method="post" action="http://erloncabral.net/api/contact" 
+    enctype="application/x-www-form-urlencoded">
+    <div>
+        <label for="Email">Email</label>
+    </div>
+    <div>
+        <input name="Email" type="text" />
+    </div>
+    <div>
+        <input type="submit" value="Submit" />
+    </div>
+</form>
+
+    <div id="message"></div>
+</body>
+</html>
