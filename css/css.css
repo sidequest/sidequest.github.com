@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url('../Hgo13k-tfSpn0qi1SFdUfbO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url('../d-6IYplOFocCacKzxwXSOLO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+}
+
+
+body {
+	margin: 0px;
+}
+
+#cabecalho {
+	width: 100%;
+	height: 729px;
+	background-image: url("../images/BGcabecalho.png");
+}
+
+#mime {
+	width: 100%;
+	height: 694px;
+	background-color: #f7b22c;
+}
+
+#cantiga {
+	width: 100%;
+	height: 694px;
+	background-color: #b217c1;
+}
+
+#rodape {
+	width: 100%;
+	height: 658px;
+	background-color: #1fabce;
+}
+
+
+
+
+#conteudoCabecalho {
+	position: absolute;
+	left: 50%;
+	margin-left: -480;
+	width: 960px;
+	height: 650px;
+	text-align: center;
+	margin-top: 65px;
+}
+
+#avatarRaphael {
+	margin-top: 29px;
+	float: left;
+	width: 300px;
+	height: 300px;
+	margin-left: 160px;
+}
+
+#avatarErlon {
+	margin-top: 29px;
+	float: right;
+	width: 300px;
+	height: 300px;
+	margin-right: 160px;
+}
+
+
+
+
+p.titulo {
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	font-weight: 100;
+	margin-top: 50px;
+	color: #fad4d1;
+	line-height: 50px;
+}
+
+p.avatar {
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	color: #fad4d1;
+	line-height: 32px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+p.profissao {
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	font-weight: 100;
+	color: #b72a16;
+	margin-top: 0px;
+}
+
+
+
+#conteudoMime {
+	position: absolute;
+	left: 50%;
+	margin-left: -480;
+	width: 960px;
+	height: 650px;
+	margin-top: 98px;
+}
+
+#fotoMime {
+	float: left;
+	margin-left: 10px;
+}
+
+#textoMime {
+	margin-top: 60px;
+	float: right;
+	text-align: left;
+	margin-right: 100px;
+	
+}
+
+p.textoMime {
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	font-weight: 100;
+	margin-top: 35px;
+	color: #fdf1e0;
+	line-height: 40px;
+	margin-bottom: 60px;
+}
+
+
+
+
+
+#conteudoCantiga {
+	position: absolute;
+	left: 50%;
+	margin-left: -480;
+	width: 960px;
+	height: auto;
+	margin-top: 98px;
+}
+
+#fotoCantiga {
+	float: left;
+	margin-left: 10px;
+}
+
+#textoCantiga {
+	margin-top: 60px;
+	float: right;
+	text-align: left;
+	margin-right: 80px;
+	
+}
+
+p.textoCantiga {
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	font-weight: 100;
+	margin-top: 35px;
+	color: #dba7e1;
+	line-height: 40px;
+	margin-bottom: 60px;
+}
+
+
+#conteudoContato {
+	position: absolute;
+	left: 50%;
+	margin-left: -480;
+	width: 960px;
+	height: auto;
+	margin-top: 70px;
+	text-align: center;
+}
+
+
+p.textoContato {
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	font-weight: 100;
+	color: #c3e3ee;
+	line-height: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+p.alertaEmail {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 100;
+	color: #106e85;
+	margin-bottom: 80px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#BTemail {
+	float: left;
+	margin-left: 375px;
+}
+
+#BTtwitter {
+	float: right;
+	margin-right: 375px;
+}

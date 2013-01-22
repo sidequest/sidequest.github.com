@@ -1,40 +1,153 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>Side Quest Apps</title>
-  
-  <style type="text/css">
-  body {
-	  background-color:#e6352a;
-  }
-  #center {
-	  width:400px;
-	  height:400px;
-	  position:absolute;
-	  top:50%;
-	  left:50%;
-	  margin-top:-200px;
-	  margin-left:-200px;
-  }
-  </style>
-  <script type="text/javascript">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Side Quest Apps</title>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-37052613-1']);
-  _gaq.push(['_setDomainName', 'sidequestapps.com']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-
 <body>
-	<img src="images/logo.png" alt="Side Quest" title="Side Quest Logo" id="center"/>
-</body>
+    <div id="cabecalho">
+        <div id="conteudoCabecalho">
+            <img src="images/logoSQ.png" alt="Side Quest Logo" />
+            <p class="titulo">
+                Hi! Our <b>Side Quest</b> is to do applications
+that we like to use!
+            </p>
+            <!-- titulo -->
+            <div id="avatarRaphael">
+                <a href="https://twitter.com/raphaellopesph"><img src="images/avatarRaphael.png" alt="Raphael Lopes, Designer"/></a>
+                <p class="avatar">Raphael Lopes</p>
+                <p class="profissao">Designer</p>
+            </div>
+            <!-- avatar raphael -->
+            <div id="avatarErlon">
+                <a href="https://twitter.com/erloncabral"><img src="images/avatarErlon.png" alt="Erlon Cabral, Developer" /></a>
+                <p class="avatar">Erlon Cabral</p>
+                <p class="profissao">Developer</p>
 
-</htm>
+            </div>
+            <!-- avatar erlon -->
+            <div class="clear"></div>
+            <!-- clear -->
+        </div>
+        <!-- conteudo cabecalho -->
+    </div>
+    <!-- cabecalho -->
+    <div id="mime">
+        <div id="conteudoMime">
+            <div id="fotoMime">
+                <img src="images/fotoMime.png" alt="Mime Home" />
+            </div>
+            <!-- fotoMime -->
+            <div id="textoMime">
+                <img src="images/logoMime.png" alt="Mime Logo"/>
+
+                <p class="textoMime">
+                    Shorten your links,<br />
+                    follow the statistics!
+                </p>
+                <!-- textoMime -->
+                <a href="http://sidequestapps.com/mime/">
+                    <img src="images/BTdownloadMime.png" alt="Mime Download"/>
+                </a>
+            </div>
+            <!-- texto mime -->
+            <div class="clear"></div>
+            <!-- clear -->
+        </div>
+        <!-- conteudo mime -->
+    </div>
+    <!-- mime -->
+    <div id="cantiga">
+        <div id="conteudoCantiga">
+            <div id="fotoCantiga">
+                <a href="http://cantiga.me/"><img src="images/fotoCantiga.png" alt="Cantiga Home" /></a>
+            </div>
+            <!-- fotoCantiga -->
+            <div id="textoCantiga">
+                <img src="images/logoCantiga.png" alt="Cantiga Logo" />
+                <p class="textoCantiga">
+                    Your companion<br />
+                    of  music!
+                </p>
+                <!-- textoCantiga -->
+                <a href="#">
+                    <a href="http://cantiga.me/"><img src="images/BTdownloadCantiga.png" alt="Cantiga Download" /></a>
+                </a>
+            </div>
+            <!-- textoCantiga -->
+            <div class="clear"></div>
+            <!-- clear -->
+        </div>
+        <!-- conteudoCantiga -->
+    </div>
+    <!-- cantiga -->
+    <div id="rodape">
+        <div id="conteudoContato">
+            <div id="contatoFormulario">
+                <form id="form1" action="#" method="post" enctype="application/x-www-form-urlencoded">
+                    <p class="textoContato">
+                        Stay alert! Let us warn you<br />
+                        about our upcoming releases!
+                    </p>
+                    <!-- textoContato -->
+                    <div id="contatoAcao">
+                        <div class="float-left" id="baseCampo">
+                            <input id="campoEmail" type="email" placeholder="Enter your email" name="Email" />
+                        </div>
+                        <!-- baseCampo -->
+                        <div class="float-left" id="baseBotao">
+                            <button id="BTEnviar" type="submit"></button>
+                        </div>
+                        <!-- baseBotao -->
+                        <div class="clear"></div>
+                        <!-- clear -->
+                    </div>
+                    <!-- contatoAcao -->
+                </form>
+                <!--form1 -->
+                <p class="alertaEmail">
+                    (Don't worry, we won't send anything unwanted!)
+                </p>
+                <!--alertaEmail -->
+            </div>
+            <!-- contatoFormulario -->
+            <div id="contatoMensagem">
+                <img src="images/icoTks.png" alt="Thanks!" />
+                <p class="textoSucesso">
+                    Thank you! Soon we will send you<br />
+                    some news from the front!
+                </p>
+                <!--textoSucesso -->
+            </div>
+            <!-- contatoMensagem -->
+            <div id="BTemail">
+                <a href="mailto:hello@sidequestapps.com">
+                    <img src="images/BTemail.png" alt="Email" /></a>
+            </div>
+            <!-- BTemail -->
+            <div id="BTtwitter">
+                <a href="https://twitter.com/SideQuest_Apps">
+                    <img src="images/BTtwitter.png" alt="Twitter" /></a>
+            </div>
+            <!-- BTtwitter -->
+            <div class="clear"></div>
+            <!-- clear -->
+        </div>
+        <!-- conteudoContato -->
+    </div>
+    <!-- rodape -->
+
+    <!--scripts-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/App/app.js"></script>
+</body>
+</html>
