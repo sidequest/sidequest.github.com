@@ -1,29 +1,27 @@
 <!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt-br"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt-br"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="pt-br"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="pt-br"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-	<meta name="apple-itunes-app" content="app-id=565960430">
+    <meta name="apple-itunes-app" content="app-id=565960430">
     <meta name="description" content="Mime &eacute; um cliente para iPhone (e iPod touch) do encurtador de urls migre.me">
-	
     <title>Mime - Side Quest</title>
-
     <link rel="author" href="../humans.txt" />
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/57x57.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72"  href="images/72x72.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/114x114.png">
-	<link rel="apple-touch-icon-precomposed" sizes="512x512" href="images/512x512.png">
-	<link rel="apple-touch-icon-precomposed" sizes="1024x1024" href="images/1024x1024.png">
+    <link rel="apple-touch-icon-precomposed" sizes="512x512" href="images/512x512.png">
+    <link rel="apple-touch-icon-precomposed" sizes="1024x1024" href="images/1024x1024.png">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-	
-	<script type="text/javascript" src="../js/modernizr.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
     <div id="content" role="main">
@@ -37,8 +35,9 @@
                     acompanhe as<br />
                     estat&iacute;sticas!
                 </p>
-                <a href="http://migre.me/cQy8t" target="_self">
-                    <img src="images/BTdownload.png" alt="Download" /></a>
+                <a href="http://migre.me/cQy8t" rel="external">
+                    <img src="images/BTdownload.png" alt="Download" />
+                </a>
             </div>
             <!-- info -->
             <div id="iphone">
@@ -52,7 +51,7 @@
     <div id="footer">
         <div id="footer-container">
             <div id="contact">
-                <a href="https://twitter.com/sidequest_apps">
+                <a href="https://twitter.com/sidequest_apps" rel="external">
                     <img src="images/BTtwitter.png" alt="Side Quest Twitter" /></a>
                 <a href="mailto:hello@sidequestapps.com">
                     <img src="images/BTemail.png" alt="E-mail" /></a>
@@ -60,7 +59,8 @@
             <!-- contact -->
             <div id="logo">
                 <a href="http://sidequestapps.com/">
-                    <img src="images/logoSQ.png" alt="Side Quest Logo" /></a>
+                    <img src="images/logoSQ.png" alt="Side Quest" />
+                </a>
             </div>
             <!-- logo -->
             <div style="clear: both"></div>
@@ -68,19 +68,19 @@
         <!-- footer-container -->
     </div>
     <!-- footer -->
-	
-	<!-- analytics -->
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-37052613-1']);
-		_gaq.push(['_setDomainName', 'sidequestapps.com']);
-		_gaq.push(['_trackPageview']);
 
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
+    <!-- analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-37052613-1']);
+        _gaq.push(['_setDomainName', 'sidequestapps.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+     </script>
 </body>
 </html>
