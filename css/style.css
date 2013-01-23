@@ -24,6 +24,11 @@ body {
     padding-top: 65px;
 }
 
+#sidequest {
+	margin: 0px;
+	padding: 0px;
+}
+
 #avatarRaphael {
     margin-top: 20px;
     float: left;
@@ -236,6 +241,18 @@ p.alertaEmail {
 #BTtwitter {
     float: right;
     margin-right: 375px;
+}
+
+#sobre {
+	padding-bottom: 6px; 
+	text-align: center;
+}
+
+#sobreTexto {
+	color: #C3E3EE; 
+	font-family: 'Roboto',sans-serif; 
+	font-size: 14px; 
+	font-weight: lighter;
 }
 
 .float-left {
