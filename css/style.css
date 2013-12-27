@@ -1,264 +1,43 @@
-/* Geral */
+body, html {
+			margin: 0;
+			padding: 0;
+		}
 
-html,
-body {
-    height: 100%;
+#tarja {
+	background-image:url(../images/tarja.png);
+	height: 4px;
 }
 
-body {
-    min-height: 100%;
+#conteudo {
+	margin-top: 90px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
 }
 
-/* cabecalho */
-
-#cabecalho {
-    height: 729px;
-    background-image: url('../images/BGcabecalho.png');
+p {
+	font-family: Georgia;
+	font-size: 30px;
+	color: #d2d2d2;
+	font-weight: 100;
+	line-height: 40px;
 }
 
-#conteudoCabecalho {
-    margin: 0 auto;
-    width: 960px;
-    height: 650px;
-    text-align: center;
-    padding-top: 65px;
+#menu {
+	margin-left: -54px;
+
 }
 
-#sidequest {
-    margin: 0px;
-    padding: 0px;
+#menu ul li { display: inline; }
+
+#menu ul li a {
+	margin: 9px;
+    color: #f7b22c;
+    text-decoration: none;
+	font-family: arial;
+	font-size: 13px;
 }
 
-#avatarRaphael {
-    margin-top: 20px;
-    float: left;
-    width: 300px;
-    height: 300px;
-    margin-left: 160px;
-}
-
-#avatarErlon {
-    margin-top: 26px;
-    float: right;
-    width: 300px;
-    height: 300px;
-    margin-right: 160px;
-}
-
-p.titulo {
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    font-weight: 100;
-    margin-top: 50px;
-    color: #fad4d1;
-    line-height: 50px;
-}
-
-p.avatar {
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    color: #fad4d1;
-    line-height: 32px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-p.profissao {
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    font-weight: 100;
-    color: #b72a16;
-    margin-top: 0px;
-}
-
-/* Mime */
-
-#mime {
-    height: 694px;
-    background-color: #f7b22c;
-}
-
-#conteudoMime {
-    margin: 0 auto;
-    width: 960px;
-    height: 650px;
-    padding-top: 98px;
-}
-
-#fotoMime {
-    float: left;
-    margin-left: 10px;
-}
-
-#textoMime {
-    margin-top: 60px;
-    float: right;
-    text-align: left;
-    margin-right: 100px;
-}
-
-p.textoMime {
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    font-weight: 100;
-    margin-top: 35px;
-    color: #fdf1e0;
-    line-height: 40px;
-    margin-bottom: 60px;
-}
-
-/* Cantiga */
-
-#cantiga {
-    height: 694px;
-    background-color: #b217c1;
-}
-
-#conteudoCantiga {
-    margin: 0 auto;
-    width: 960px;
-    height: auto;
-    padding-top: 98px;
-}
-
-#fotoCantiga {
-    float: left;
-    margin-left: 10px;
-}
-
-#textoCantiga {
-    margin-top: 60px;
-    float: right;
-    text-align: left;
-    margin-right: 80px;
-}
-
-p.textoCantiga {
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    font-weight: 100;
-    margin-top: 35px;
-    color: #dba7e1;
-    line-height: 40px;
-    margin-bottom: 60px;
-}
-
-/* Rodape */
-
-#rodape {
-    background-color: #1fabce;
-}
-
-#conteudoContato {
-    margin: 0 auto;
-    width: 960px;
-    height: 620px;
-    padding-top: 70px;
-    text-align: center;
-}
-
-#contatoFormulario {
-    display: block;
-}
-
-#contatoMensagem {
-    display: none;
-    padding-top: 4px;
-}
-
-p.textoContato {
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    font-weight: 100;
-    color: #c3e3ee;
-    line-height: 40px;
-    margin-bottom: 40px;
-    text-align: center;
-    margin-top: 0px;
-}
-
-#contatoAcao {
-    margin: 0 auto;
-    background: url('../images/BGemail.png') no-repeat;
-    width: 632px;
-    height: 114px;
-    text-align: left;
-}
-
-p.textoSucesso, p.textoInfo {
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    font-weight: 100;
-    color: #c3e3ee;
-    line-height: 40px;
-    text-align: center;
-    margin-bottom: 80px;
-    margin-top: 80px;
-}
-
-p.textoSucesso {
-    margin-top: 40px;
-    margin-bottom: 100px;
-}
-
-p.alertaEmail {
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    font-weight: 100;
-    color: #106e85;
-    margin-bottom: 80px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-#campoEmail {
-    border: medium none;
-    font-family: 'Roboto',sans-serif;
-    font-size: 24px;
-    font-weight: 200;
-    height: 60px;
-    margin-left: 56px;
-    margin-right: 10px;
-    margin-top: 28px;
-    overflow: hidden;
-    text-indent: 3px;
-    width: 384px;
-}
-
-#BTEnviar {
-    background: url('../images/BTsend2.png') no-repeat;
-    width: 151px;
-    height: 114px;
-    border: none;
-}
-
-#BTemail {
-    float: left;
-    margin-left: 375px;
-}
-
-#BTtwitter {
-    float: right;
-    margin-right: 375px;
-}
-
-#sobre {
-    padding-bottom: 6px;
-    text-align: center;
-}
-
-#sobreTexto {
-    color: #C3E3EE;
-    font-family: 'Roboto',sans-serif;
-    font-size: 14px;
-    font-weight: lighter;
-}
-
-.float-left {
-    float: left;
-}
-
-.clear {
-    clear: both;
+#menu ul li a:hover {
+    text-decoration: underline;
 }
